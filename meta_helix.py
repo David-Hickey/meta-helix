@@ -50,9 +50,9 @@ if __name__ == "__main__":
     fig = plt.figure()
     ax = fig.add_subplot(projection='3d')
     
-    max_t = 6*np.pi/2
-    ts = np.linspace(0, max_t, 20000)
-    helix_n = helix(ts, 3, [1, 1, 10, 100], [max_t, max_t, max_t*0.1, max_t*0.025])
+    max_t = 12*np.pi/2
+    ts = np.linspace(0, max_t, 40000)
+    helix_n = helix(ts, 3, [1, 1, 10, 100], [max_t/2, max_t/2, max_t*0.1, max_t*0.1*0.1])
     
     plt.plot(*helix_n.T)
     plt.show()
